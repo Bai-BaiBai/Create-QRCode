@@ -44,7 +44,7 @@ public class CreateQRCode {
             BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height, hints);
 
             //矩阵写入图片类,可以选择写入到路径 or 输出流中，这里为了直接看到，使用不推荐的写入文件方式
-            File file = new File("./QRCode.png");
+            File file = new File("./zxing.png");
             MatrixToImageWriter.writeToFile(bitMatrix, format, file);
         } catch (WriterException | IOException e) {
             e.printStackTrace();
