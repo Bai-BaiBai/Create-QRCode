@@ -22,7 +22,7 @@ public class CreateQRCode {
     private int height = 300;
 
     private String format = "png"; //二维码保存的格式
-    private String content = "https://github.com/Bai-BaiBai";//二维码的内容
+    private String content = "https://github.com/Bai-BaiBai/Create-QRCode";//二维码的内容
 
     public CreateQRCode(String content) {
         this.content = content;
