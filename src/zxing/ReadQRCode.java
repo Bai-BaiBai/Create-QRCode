@@ -18,7 +18,7 @@ public class ReadQRCode {
     public static void readQRCode() throws IOException, NotFoundException {
 
         MultiFormatReader  reader = new MultiFormatReader();//需要使用reader的decode方法读取二维码信息
-        File file = new File("./QRCode.png");//二维码文件位置
+        File file = new File("./zxing.png");//二维码文件位置
 
         BufferedImage image = ImageIO.read(file);//将二维码按图片读取
         BinaryBitmap bitmap = new BinaryBitmap(new HybridBinarizer(new BufferedImageLuminanceSource(image)));//转换成二进制map
